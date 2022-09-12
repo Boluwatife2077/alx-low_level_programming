@@ -1,14 +1,20 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
-* main - random numbers
-* Return: last digit
+* main - base16 lowercase letters
+* Return: success-0
 */
 int main(void)
 {
-char x;
-for (x = 'z'; x >= 'a'; x--)
+int i;
+char y;
+for (i = 0; i <= 9; i++)
 {
-putchar(x);
+putchar(i + '0');
+}
+for (y = 'a'; y <= 'f'; y++)
+{
+putchar(y);
 }
 putchar('\n');
 return (0);
