@@ -1,22 +1,15 @@
 #include "main.h"
-
 /**
- * _islower - Entry point
- * Description: checks is a character is lowercase
- * @c: the integer value it receives
- * Return: 1 if true. 0 if false.
- */
-int _islower(int c)
+* _isalpha - function to check if c is a letter, lowercase or uppercase
+* @c: is the int that will use for the argument of the function
+* Return: 0
+*/
+int _isalpha(int c)
 {
-int i = 'a';
-
-for (i = 'a'; i <= 'z'; i++)
-{
-/* refer int c*/
-if (c == i)
-{
-return (1);
-}
-}
-return (0);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
+	return (1);
+	}
+	else
+	return (0);
 }
